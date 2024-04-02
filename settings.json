@@ -60,5 +60,5 @@
 	"workbench.startupEditor": "none",
 	"editor.guides.indentation": true,
 	"editorconfig.generateAuto": false // Change
-  // "editorconfig.template": "/Users/bradpottinger/Developer/dotfiles/.editorconfig",
+  // "editorconfig.template": "/Users/bradpottinger/Developer/dotfiles/.editorconfig"
 }
