@@ -1,0 +1,64 @@
+{
+	"workbench.colorTheme": "Bearded Theme Black & Amethyst",
+	"workbench.colorCustomizations": {
+			"[Bearded Theme Black & Amethyst]": {}
+	},
+  "workbench.activityBar.location": "hidden",
+	"telemetry.telemetryLevel": "off",
+  "window.zoomLevel": 2,
+	"editor.fontFamily": "OpenDyslexicMono, Consolas, 'Courier New', monospace",
+	"editor.fontSize": 14,
+	"editor.minimap.enabled": false,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"files.exclude": {
+			"**/.git": true
+	},
+	"files.trimTrailingWhitespace": true,
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.fontWeight": "400",
+	"terminal.integrated.fontWeightBold": "500",
+	"terminal.integrated.lineHeight": 1.2,
+	"workbench.iconTheme": "material-icon-theme", // "vscode-icons"
+	// "sublimeTextKeymap.promptV3Features": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.snippetSuggestions": "top",
+	"editor.formatOnPaste": false,
+	"editor.formatOnSave": true,
+	"files.associations": {
+			"*.tmpl": "html",
+			"*.html.erb": "html"
+	},
+	"merge-conflict.codeLens.enabled": false,
+	"merge-conflict.decorators.enabled": false,
+	"debug.javascript.codelens.npmScripts": "never",
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+	"files.hotExit": "off",
+	"files.autoSave": "afterDelay",
+	"editor.wordWrap": "on",
+	"window.openFoldersInNewWindow": "on",
+	"[markdown]": {
+			"files.trimTrailingWhitespace": false
+	},
+	"[terraform]": {
+			"editor.tabSize": 2,
+			"editor.formatOnSave": true
+	},
+	"emmet.showAbbreviationSuggestions": false,
+	"javascript.updateImportsOnFileMove.enabled": "never",
+	"search.exclude": {
+			"**/docs": true
+	},
+	"breadcrumbs.enabled": false,
+	"workbench.editor.showTabs": "multiple",
+	"editor.renderWhitespace": "none",
+	// "markdown.extension.toc.updateOnSave": false,
+	"extensions.ignoreRecommendations": true,
+	"explorer.confirmDragAndDrop": false,
+	"security.workspace.trust.enabled": false,
+	"workbench.startupEditor": "none",
+	"editor.guides.indentation": true,
+	"editorconfig.generateAuto": false // Change
+  // "editorconfig.template": "/Users/bradpottinger/Developer/dotfiles/.editorconfig",
+}
