@@ -9,7 +9,7 @@
 	"editor.fontFamily": "OpenDyslexicMono, Consolas, 'Courier New', monospace",
 	"editor.fontSize": 14,
 	"editor.minimap.enabled": false,
-	"editor.tabSize": 2,
+	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
 	"files.exclude": {
 			"**/.git": true
@@ -42,8 +42,7 @@
 			"files.trimTrailingWhitespace": false
 	},
 	"[terraform]": {
-			"editor.tabSize": 2,
-			"editor.formatOnSave": true
+			"editor.tabSize": 2
 	},
 	"emmet.showAbbreviationSuggestions": false,
 	"javascript.updateImportsOnFileMove.enabled": "never",
