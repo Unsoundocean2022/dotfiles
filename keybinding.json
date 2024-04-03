@@ -1,0 +1,14 @@
+[
+	{
+		"key": "ctrl+cmd+]",
+		"command": "workbench.action.navigateRight"
+	},
+	{
+		"key": "ctrl+cmd+[",
+		"command": "workbench.action.navigateLeft"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "explorer.newFile"
+	}
+]
