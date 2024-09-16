@@ -26,3 +26,29 @@ alias lp="git lp"
 
 # File size
 alias fs="stat -f \"%z bytes\""
+
+
+
+alias d='cd ~/Developer/'
+
+alias tf='terraform'
+
+alias k='kubectl'
+
+alias start='minikube start —driver=docker --alsologtostderr'
+
+alias stop='minikube delete'
+
+alias s='minikube service'
+
+alias wk='watch kubectl get pods'
+
+alias l='/Users/bradpottinger/Developer/QA_Course/M4/Flask_Booking_System/scripts/log-vars.sh'
+
+alias a='kubectl apply -f'
+
+alias b='kubectl delete -f'
+
+alias ll='ls -al'
+
+autoload -Uz compinit && compinit

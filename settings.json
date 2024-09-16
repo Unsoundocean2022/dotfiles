@@ -1,63 +1,146 @@
 {
-	"workbench.colorTheme": "Bearded Theme Black & Amethyst",
-	"workbench.colorCustomizations": {
-			"[Bearded Theme Black & Amethyst]": {}
-	},
+  "workbench.colorTheme": "Bearded Theme Black & Amethyst",
+  "workbench.colorCustomizations": {
+    "[Bearded Theme Black & Amethyst]": {}
+  },
+  "telemetry.telemetryLevel": "off",
+  "window.zoomLevel": 0.5,
+  "launch": {},
+  "[json]": {},
+  // "editor.fontFamily": "OpenDyslexicMono",
+  "update.showReleaseNotes": false,
+  "editor.fontSize": 12,
+  "editor.fontWeight": "normal",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": false,
+  "editor.matchBrackets": "never",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.showTabs": "multiple",
+  // "editor.lineNumbers": "relative",
+
+  "vim.leader": "<space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+
+  "files.exclude": {
+    "**/.git": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontWeightBold": "500",
+  "terminal.integrated.lineHeight": 1.2,
+  "workbench.iconTheme": "material-icon-theme",
+  // "workbench.iconTheme": "vscode-icons",
+  // "sublimeTextKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.tmpl": "html",
+    "*.html.erb": "html",
+    "*.css": "tailwindcss"
+  },
+  "merge-conflict.codeLens.enabled": false,
+  "merge-conflict.decorators.enabled": false,
+  "debug.javascript.codelens.npmScripts": "never",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "files.hotExit": "off",
+  "files.autoSave": "afterDelay",
+  "editor.wordWrap": "on",
+  "window.openFoldersInNewWindow": "on",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[terraform]": {
+    "editor.tabSize": 2
+  },
+  "emmet.showAbbreviationSuggestions": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "search.exclude": {
+    "**/docs": true
+  },
+  "breadcrumbs.enabled": false,
+  "workbench.editor.showTabs": "multiple",
+  "editor.renderWhitespace": "none",
+  // "markdown.extension.toc.updateOnSave": false,
+  "extensions.ignoreRecommendations": true,
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.enabled": false,
+  "editor.guides.indentation": true,
+  "workbench.settings.applyToAllProfiles": [],
   "workbench.activityBar.location": "hidden",
-	"telemetry.telemetryLevel": "off",
-  "window.zoomLevel": 2,
-	"editor.fontFamily": "OpenDyslexicMono, Consolas, 'Courier New', monospace",
-	"editor.fontSize": 14,
-	"editor.minimap.enabled": false,
-	"editor.tabSize": 4,
-	"editor.insertSpaces": false,
-	"files.exclude": {
-			"**/.git": true
-	},
-	"files.trimTrailingWhitespace": true,
-	"terminal.integrated.fontSize": 14,
-	"terminal.integrated.fontWeight": "400",
-	"terminal.integrated.fontWeightBold": "500",
-	"terminal.integrated.lineHeight": 1.2,
-	"workbench.iconTheme": "material-icon-theme", // "vscode-icons"
-	// "sublimeTextKeymap.promptV3Features": true,
-	"editor.multiCursorModifier": "ctrlCmd",
-	"editor.snippetSuggestions": "top",
-	"editor.formatOnPaste": false,
-	"editor.formatOnSave": true,
-	"files.associations": {
-			"*.tmpl": "html",
-			"*.html.erb": "html"
-	},
-	"merge-conflict.codeLens.enabled": false,
-	"merge-conflict.decorators.enabled": false,
-	"debug.javascript.codelens.npmScripts": "never",
-	"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
-	"files.hotExit": "off",
-	"files.autoSave": "afterDelay",
-	"editor.wordWrap": "on",
-	"window.openFoldersInNewWindow": "on",
-	"[markdown]": {
-			"files.trimTrailingWhitespace": false
-	},
-	"[terraform]": {
-			"editor.tabSize": 2
-	},
-	"emmet.showAbbreviationSuggestions": false,
-	"javascript.updateImportsOnFileMove.enabled": "never",
-	"search.exclude": {
-			"**/docs": true
-	},
-	"breadcrumbs.enabled": false,
-	"workbench.editor.showTabs": "multiple",
-	"editor.renderWhitespace": "none",
-	// "markdown.extension.toc.updateOnSave": false,
-	"extensions.ignoreRecommendations": true,
-	"explorer.confirmDragAndDrop": false,
-	"security.workspace.trust.enabled": false,
-	"workbench.startupEditor": "none",
-	"editor.guides.indentation": true,
-	"editorconfig.generateAuto": false // Change
-  // "editorconfig.template": "/Users/bradpottinger/Developer/dotfiles/.editorconfig"
+  "workbench.startupEditor": "none",
+  "todohighlight.isEnable": false,
+  // "editorconfig.generateAuto": false, // Change
+  // "editorconfig.template": "/Users/bradpottinger/Developer/dotfiles/.editorconfig",
+  "gopls": { "ui.semanticTokens": true },
+  "go.toolsManagement.autoUpdate": true,
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning",
+    "info"
+  ]
 }
