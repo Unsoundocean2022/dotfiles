@@ -3,6 +3,8 @@
 [apply]
 	whitespace = fix
 [alias]
+	ac = !git add -A && git commit -m
+	acp = !git add -A && git commit -m "$@" && git push && :
 	co = checkout
 	add = add -a
 	ca = commit -am
